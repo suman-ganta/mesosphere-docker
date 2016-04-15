@@ -1,4 +1,4 @@
-FROM garland/mesosphere-docker-base-image
+FROM sumanganta/mesosphere-docker-base-image
 
 # Installing zookeeper.  Seems to be a dependancy to mesos
 # Not going to start it on runtime though
