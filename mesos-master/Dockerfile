@@ -13,4 +13,7 @@ RUN echo in_memory | sudo dd of=/etc/mesos-master/registry
 # Not exposing port b/c you have to run the master in bridge net mode
 #EXPOSE 5050
 
+#install docker
+RUN curl -sSL https://get.docker.com/ | sh
+
 ENTRYPOINT ["mesos-master"]
